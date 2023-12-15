@@ -22,18 +22,12 @@ export function ModeLanguage() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem
-          className="flex gap-2 items-center"
-        >
-        <img src="/estados-unidos.png" alt="españa" className="w-[24px]"/>
-          <a className="text-base" href="https://leinerhoyos-en.netlify.app/">EN</a>
+        <DropdownMenuItem>
+          <a className="text-base flex items-center gap-2 w-full" href="https://leinerhoyos-en.netlify.app/"><img src="/estados-unidos.png" alt="españa" className="w-[24px]"/>EN</a>
         </DropdownMenuItem>
-        <DropdownMenuItem
-          
-          className="flex gap-2 items-center"
-        >
-            <img src="/espana.png" alt="españa" className="w-[24px]"/>
-          <a className="text-base" href="https://leinerhoyos.netlify.app/">ES</a>
+        <DropdownMenuItem>
+            
+          <a className="text-base flex items-center gap-2 w-full" href="https://leinerhoyos.netlify.app/"><img src="/espana.png" alt="españa" className="w-[24px]"/>ES</a>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
