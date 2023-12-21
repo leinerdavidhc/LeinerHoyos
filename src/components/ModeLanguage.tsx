@@ -23,7 +23,7 @@ export function ModeLanguage() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem>
-          <a className="text-base flex items-center gap-2 w-full" href="https://leinerhoyos-en.netlify.app/"><img src="/estados-unidos.png" alt="españa" className="w-[24px]"/>EN</a>
+          <a className="text-base  flex items-center gap-2 w-full" href="https://leinerhoyos-en.netlify.app/"><img src="/estados-unidos.png" alt="españa" className="w-[24px]"/>EN</a>
         </DropdownMenuItem>
         <DropdownMenuItem>
             

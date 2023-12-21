@@ -1,19 +1,38 @@
 ---
 import "@/styles/globals.css";
+import Proyectos from "@/components/Proyectos";
+import Contacto from "@/components/Contacto.astro";
+import Footer from "@/components/Footer.astro";
 import Navbar from "@/components/Navbar";
 interface Props {
   title: string;
 }
 const { title } = Astro.props;
-
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="¡Hola! Soy Leiner Hoyos, un apasionado desarrollador web fullstack de Colombia, con 21 años y 3 años de experiencia en el desarrollo web. Especializado en el stack MERN y con habilidades tanto en frontend como en backend. Mi objetivo es fusionar la estética con la funcionalidad para crear experiencias web atractivas y altamente funcionales. ¡Descubre cómo mi pasión por el desarrollo web puede agregar valor a tu próximo proyecto!"
+    />
+    <meta
+      name="keywords"
+      content="Desarrollador web, Fullstack, MERN Stack, Frontend, Backend, HTML, CSS, JavaScript, Colombia, 21 años, Experiencia en desarrollo web"
+    />
+    <meta name="author" content="Leiner Hoyos" />
+    <meta
+      property="og:title"
+      content="Leiner Hoyos - Desarrollador Web Fullstack"
+    />
+    <meta
+      property="og:description"
+      content="¡Hola! Soy Leiner Hoyos, un apasionado desarrollador web fullstack de Colombia, con 21 años y 3 años de experiencia en el desarrollo web. Especializado en el stack MERN y con habilidades tanto en frontend como en backend."
+    />
+    <meta property="og:image" content="URL_de_la_imagen" />
     <link rel="icon" type="image/png" href="/icon.png" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -26,13 +45,16 @@ const { title } = Astro.props;
       rel="stylesheet"
     />
     <meta name="generator" content={Astro.generator} />
-    </script>
-    <title>{title}</title>
-  </head>
+    <title>{title}</title></head
+  >
+
   <body>
-    <main class="container mx-auto min-h-screen pl-0 pr-0 " id="main">
+    <main class="container mx-auto min-h-screen pl-0 pr-0" id="main">
       <Navbar client:load />
       <slot />
+      <Proyectos client:load />
+      <Contacto />
+      <Footer />
     </main>
 
     <script is:inline>
